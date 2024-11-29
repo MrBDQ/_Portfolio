@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+.main-color {
+  color: #f7c08a;
+}
+
+.color-or {
+  color: #cc5500;
+}
+.color-vio {
+  color: #5d3fd3;
+}
+.color-bl {
+  color: #6082b6;
+}
+.bg-main {
+  background-color: #f7c08a;
+}
+
+/*transition*/
+
+/* Define the text style */
+#box {
+  border-radius: 15px 50px;
+  padding: 10px;
+  width: auto;
+  height: 150px;
+}
+
+/*NAVBAR*/
+
+#bar a {
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+  margin: 0 10px;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease;
+}
+
+#bar a:hover,
+#bar a.active {
+  color: white;
+  border-bottom: 3px solid #f7c08a;
+}
+
+/* Custom Styles for Cards */
+.wrapper {
+  position: relative;
+  height: 100px;
+}
+
+@keyframes move {
+  to {
+    left: -200px;
+  }
+}
+.item {
+  position: absolute;
+  left: calc(200px * 8);
+  animation-name: move;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transition: transform 0.8s ease-in-out;
+  box-shadow: 0 4px 12px rgba(247, 192, 138, 0.5); /* Normal shadow (darker) */
+  font-family: "Source Code Pro", "Courier New", monospace;
+}
+
+.item:hover {
+  transform: scale(1.2); /* Increase size by 20% */
+  box-shadow: 0 6px 18px rgba(247, 192, 138, 0.7); /* Darker shadow on hover */
+}
+
+.item-1 {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+.item-2 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+.item-3 {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+.item-4 {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+.item-5 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item-6 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item-7 {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item-8 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
